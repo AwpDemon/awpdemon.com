@@ -240,45 +240,85 @@ body {
     bottom: 30vh;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 300px;
     z-index: 5;
 }
 
 .mountain {
     position: absolute;
     bottom: 0;
-    background: #000000;
+    filter: drop-shadow(0 -2px 10px rgba(0, 0, 0, 0.5));
 }
 
 .mountain1 {
-    left: -10%;
+    left: -5%;
     width: 0;
     height: 0;
-    border-left: 400px solid transparent;
-    border-right: 400px solid transparent;
-    border-bottom: 180px solid #000000;
+    border-left: 450px solid transparent;
+    border-right: 450px solid transparent;
+    border-bottom: 250px solid #0a0a0f;
     background: none;
+}
+
+.mountain1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -450px;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 120px solid #050508;
 }
 
 .mountain2 {
-    left: 25%;
+    left: 20%;
     width: 0;
     height: 0;
-    border-left: 300px solid transparent;
-    border-right: 300px solid transparent;
-    border-bottom: 140px solid #000000;
+    border-left: 380px solid transparent;
+    border-right: 380px solid transparent;
+    border-bottom: 200px solid #000000;
     background: none;
-    opacity: 0.9;
+    opacity: 0.95;
+    z-index: 6;
 }
 
 .mountain3 {
-    right: 5%;
+    right: 0%;
     width: 0;
     height: 0;
-    border-left: 350px solid transparent;
-    border-right: 350px solid transparent;
-    border-bottom: 160px solid #000000;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 220px solid #0d0d12;
     background: none;
+}
+
+.mountain3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -500px;
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 140px solid #060609;
+}
+
+/* Add more mountain peaks for depth */
+.mountain-back {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 600px solid transparent;
+    border-right: 600px solid transparent;
+    border-bottom: 180px solid #05050a;
+    opacity: 0.7;
+    z-index: 4;
 }
 
 /* Tree Line */

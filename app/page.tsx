@@ -125,6 +125,7 @@ export default function Home() {
 
       {/* Mountains */}
       <div className="mountains">
+        <div className="mountain-back"></div>
         <div className="mountain mountain1"></div>
         <div className="mountain mountain2"></div>
         <div className="mountain mountain3"></div>
